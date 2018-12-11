@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Main2Activity"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+
+    android:background="@drawable/zz"
+    >
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="37dp"
+        android:text="@string/logout" />
+
+    <ImageButton
+        android:id="@+id/special"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rank"
+        android:layout_toStartOf="@+id/popular"
+        android:background="#00000000"
+        android:src="@drawable/only" />
+
+    <ImageButton
+        android:id="@+id/popular"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="161dp"
+        android:layout_toStartOf="@+id/logout"
+        android:background="#00000000"
+        android:src="@drawable/near"
+        android:text="@string/popular" />
+
+    <ImageButton
+        android:id="@+id/rank"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:layout_toStartOf="@+id/popular"
+        android:background="#00000000"
+        android:src="@drawable/hot"
+        android:text="@string/rank" />
+
+    <ImageButton
+        android:id="@+id/score"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/popular"
+        android:layout_below="@+id/special"
+        android:background="#00000000"
+        android:src="@drawable/rating"
+        android:text="@string/score" />
+
+
+
+</RelativeLayout>
